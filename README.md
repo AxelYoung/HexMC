@@ -2,8 +2,8 @@
 
 HexMC is a Minecraft clone that utilizes hexagonal-prism shaped voxels instead of cubes.
 
-Gameplay Demo Video
-<video>  <source src="Git/HexcraftFinalDemo.mp4" type="video/mp4"></video>
+[![Gameplay Demo Video](https://img.youtube.com/vi/x_7VFMKwD7Q/0.jpg)](https://www.youtube.com/watch?v=x_7VFMKwD7Q)
+
 
 <strong>Features</strong>
 <ul>

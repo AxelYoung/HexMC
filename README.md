@@ -6,8 +6,15 @@ HexMC is a Minecraft clone that utilizes hexagonal-prism shaped voxels instead o
 
 <strong>Features</strong>
 <ul>
-<li> Procedural hexagonal voxel terrain </li>
+<li> Procedural terrain </li>
+  <ul>
+    <li> Hexagonal voxels </li>
+    <li> Multithreading </li>
+    <li> Noise settings </li>
+    <li> Voxel optimizations / culling </li>
 <li> Inventory and crafting system </li>
+    <li> Dragging and dropping </li>
+    <li> Creates meshes for 2D sprites </li>
 <li> Player controller </li>
   <ul>
     <li> Breaking and placing voxels </li>

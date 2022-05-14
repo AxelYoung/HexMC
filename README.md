@@ -13,11 +13,13 @@ HexMC is a Minecraft clone that utilizes hexagonal-prism shaped voxels instead o
     <li> Noise settings </li>
     <li> Voxel optimizations / culling </li>
   </ul>
+  
 <li> Inventory and crafting system </li>
     <ul>
     <li> Dragging and dropping </li>
     <li> Creates meshes for 2D sprites </li>
     </ul>
+  
 <li> Player controller </li>
   <ul>
     <li> Breaking and placing voxels </li>

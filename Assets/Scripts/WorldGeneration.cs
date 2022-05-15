@@ -35,10 +35,6 @@ public class WorldGeneration : MonoBehaviour {
     public int meshLayer;
     public int foliageLayer;
 
-    public Queue<Coordinates> grassPositions = new Queue<Coordinates>();
-    public Queue<Coordinates> flowerPositions = new Queue<Coordinates>();
-
-    bool doneCreatingWorld = false;
 
     // Start is called before the first frame update
     void Awake() {
@@ -100,7 +96,6 @@ public class WorldGeneration : MonoBehaviour {
         Vector3 spawn = new Vector3(VoxelData.worldSize.x / 2, VoxelData.chunkHeight * 2, VoxelData.worldSize.y / 2);
         player.position = spawn;
         CheckViewDistance();
-        doneCreatingWorld = true;
     }
 
     void CreateChunk() {
@@ -160,14 +155,6 @@ public class WorldGeneration : MonoBehaviour {
             if (chunksToDraw.Peek().isEditable) {
                 chunksToDraw.Dequeue().GenerateMesh();
             }
-        }
-        while (grassPositions.Count > 0) {
-            Coordinates pos = grassPositions.Dequeue();
-            GameObject grass = Instantiate(grassPrefab, pos.worldPosition, Quaternion.identity);
-        }
-        while (flowerPositions.Count > 0) {
-            Coordinates pos = flowerPositions.Dequeue();
-            GameObject flower = Instantiate(flowerPrefab, pos.worldPosition, Quaternion.identity);
         }
     }
 

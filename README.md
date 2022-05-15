@@ -7,7 +7,7 @@ HexMC is a Minecraft clone that utilizes hexagonal-prism shaped voxels instead o
 </a>
 
 <p align="center">
-<img src="img/main.gif" alt="Astrala"/>
+<img src="img/main.gif?raw=true" alt="Astrala"/>
 </p>
 <strong>Features</strong>
 <ul>
